@@ -7,9 +7,10 @@ Chrome extension for hands-free exploration of the world wide web!
 Development
 -----------
 
-Hands Free uses an external web page to take voice input, thus circumventing the microphone restrictions on Chrome extensions. This means you need to run a local HTTPS server in order to work on certain portions of the code. A python script is included which does this for you. Assuming you have Python installed, you can start up the server with this command, which works with both Python 2 and Python 3:
+Hands Free uses an external web page to take voice input, thus circumventing the microphone restrictions on Chrome extensions. This means you need to run a local HTTPS server in order to work on certain portions of the code. A python script is included which does this for you. Assuming you have Python installed, you can start up the server with these commands, which works with both Python 2 and Python 3:
 
-     python website/local-server.py
+      cd website
+      python local-server.py
 
 Once the server is running, open Chrome, go to `Settings > Extensions > Load unpacked extension...`, and choose the folder      `handsfree/development/`.
 

@@ -62,3 +62,18 @@ screenshot
 
 "next" could have unexpected results if it goes to an offscreen form.
 only allow it to work for currently visible forms, require a scroll down to continue
+
+--
+It often mishears single-digit numbers (e.g. "three" sounds like "free"). 2-digit numbers are much more reliable ("two three" will usually be heard correctly). 3-digit numbers are even better, but a bit less convenient to say. We should start counting either at 20 or at 100.
+--
+The "show" command can be a bit slow to respond if there are a lot of links -- can we speed this up?
+-- 
+The "show" command seems to not work for links that are below the fold?
+--
+If "Keep showing" is on and you say "show", you can't get the numbers back unless you say "stop showing" first.
+--
+Any time you add a new alias in the options page, you have to refresh the input page for it to take effect. It'd be nice if you didn't have to.
+--
+All of the numbers that show up for link selection can be a bit annoying and cover too much. Maybe make them transparent?
+--
+The command delay/lastMessage/lastTime stuff in control.js doesn't quite seem to work correctly. E.g. if I say "shoulder" a little slowly, it will do the "show" command.
