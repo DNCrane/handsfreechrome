@@ -12,6 +12,12 @@
       .table textarea.form-control {
           width: 70%;
       }
+      #status {
+          height:26px;
+      }
+      #save {
+          margin-bottom:15px;
+      }
     </style>
 </head>
 
@@ -25,14 +31,14 @@
           <thead>
             <tr>
               <th class="col-md-3">Command</th>
-              <th class="col-md-5">Aliases</th>
+              <th class="col-md-5">Aliases (separate with commas)</th>
             </tr>
           </thead>
           <tbody>
         </tbody>
       </table>
+        <div id="status" style="height:26px;"></div>
         <button id="save" class="btn btn-primary btn-lg">Save</button><br>
-        <span id="status"></span>
         
         <script src="vendor/jquery.js"></script>
         <script src="options.js"></script>

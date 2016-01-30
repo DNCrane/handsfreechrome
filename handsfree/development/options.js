@@ -31,6 +31,8 @@ var commands = [
     'full screen',  // toggle full screen mode
     'new tab',      // opens a new tab
     'close tab',     // closes current tab
+    'keep showing',
+    'stop showing',
     'keep scrolling down',  // sets browser scrolling continuously down until the end of the page
     'keep scrolling up',    // sets browser scrolling continuously up until the end of the page
     'keep scrolling left',  // sets browser scrolling continuously left until the end of the page
@@ -59,11 +61,11 @@ function save_options() {
         openInTab: openInTab
     }, function() {
         var status = $('#status');
-
-        status.html('Options saved. If the input page is open, you must refresh it for new aliases to take effect.');
+        console.log("SAVED!");
+        status.html('Options saved! If the input page is open, you must refresh it for new aliases to take effect.');
         setTimeout(function() {
             status.html('');
-        }, 3500);
+        }, 4500);
     });
 }
 
